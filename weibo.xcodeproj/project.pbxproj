@@ -7,14 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		790D7266248A32E100A5BF0B /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790D7265248A32E100A5BF0B /* NetworkTools.swift */; };
+		790D7269248A373600A5BF0B /* OAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790D7268248A373600A5BF0B /* OAuthViewController.swift */; };
 		79F599C0242AE6CD002DD44E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F599BF242AE6CD002DD44E /* AppDelegate.swift */; };
 		79F599C2242AE6CD002DD44E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F599C1242AE6CD002DD44E /* ViewController.swift */; };
 		79F599C5242AE6CD002DD44E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79F599C3242AE6CD002DD44E /* Main.storyboard */; };
 		79F599C7242AE6EC002DD44E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79F599C6242AE6EC002DD44E /* Assets.xcassets */; };
 		79F599CA242AE6EC002DD44E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79F599C8242AE6EC002DD44E /* LaunchScreen.storyboard */; };
+		79F599E0242AF3F4002DD44E /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F599DF242AF3F4002DD44E /* DiscoverTableViewController.swift */; };
+		79F599E2242AF431002DD44E /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F599E1242AF431002DD44E /* HomeTableViewController.swift */; };
+		79F599E4242AF447002DD44E /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F599E3242AF447002DD44E /* MessageTableViewController.swift */; };
+		79F599E6242AF482002DD44E /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F599E5242AF482002DD44E /* ProfileTableViewController.swift */; };
+		79F599E8242AF693002DD44E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F599E7242AF693002DD44E /* MainViewController.swift */; };
+		79F599EB243DAF36002DD44E /* UIBut+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F599EA243DAF36002DD44E /* UIBut+Extension.swift */; };
+		79F599EE243DB69E002DD44E /* VistorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F599ED243DB69E002DD44E /* VistorTableViewController.swift */; };
+		79F599F0243DB801002DD44E /* VistorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F599EF243DB801002DD44E /* VistorView.swift */; };
+		8662FDC7B6AC438223DC0183 /* Pods_weibo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5088412A03501252D713EE1 /* Pods_weibo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		790D7265248A32E100A5BF0B /* NetworkTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
+		790D7268248A373600A5BF0B /* OAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthViewController.swift; sourceTree = "<group>"; };
 		79F599BC242AE6CD002DD44E /* weibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79F599BF242AE6CD002DD44E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79F599C1242AE6CD002DD44E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +35,17 @@
 		79F599C6242AE6EC002DD44E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79F599C9242AE6EC002DD44E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79F599CB242AE6EC002DD44E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79F599DF242AF3F4002DD44E /* DiscoverTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewController.swift; sourceTree = "<group>"; };
+		79F599E1242AF431002DD44E /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		79F599E3242AF447002DD44E /* MessageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
+		79F599E5242AF482002DD44E /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		79F599E7242AF693002DD44E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		79F599EA243DAF36002DD44E /* UIBut+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBut+Extension.swift"; sourceTree = "<group>"; };
+		79F599ED243DB69E002DD44E /* VistorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistorTableViewController.swift; sourceTree = "<group>"; };
+		79F599EF243DB801002DD44E /* VistorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistorView.swift; sourceTree = "<group>"; };
+		83726EA9411C029CE6B7D9C4 /* Pods-weibo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weibo.release.xcconfig"; path = "Pods/Target Support Files/Pods-weibo/Pods-weibo.release.xcconfig"; sourceTree = "<group>"; };
+		CB4D25F2D270692B9DA7A756 /* Pods-weibo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weibo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-weibo/Pods-weibo.debug.xcconfig"; sourceTree = "<group>"; };
+		E5088412A03501252D713EE1 /* Pods_weibo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_weibo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +53,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8662FDC7B6AC438223DC0183 /* Pods_weibo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5844E8FA5FD34DD1B39E1362 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5088412A03501252D713EE1 /* Pods_weibo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		59E9D29DC01A35DC9509C93E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB4D25F2D270692B9DA7A756 /* Pods-weibo.debug.xcconfig */,
+				83726EA9411C029CE6B7D9C4 /* Pods-weibo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		790D7267248A36F500A5BF0B /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				790D7268248A373600A5BF0B /* OAuthViewController.swift */,
+			);
+			path = OAuth;
+			sourceTree = "<group>";
+		};
 		79F599B3242AE6CC002DD44E = {
 			isa = PBXGroup;
 			children = (
 				79F599BE242AE6CD002DD44E /* weibo */,
 				79F599BD242AE6CD002DD44E /* Products */,
+				59E9D29DC01A35DC9509C93E /* Pods */,
+				5844E8FA5FD34DD1B39E1362 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +106,7 @@
 		79F599BE242AE6CD002DD44E /* weibo */ = {
 			isa = PBXGroup;
 			children = (
+				79F599D1242AF1D3002DD44E /* Classes */,
 				79F599BF242AE6CD002DD44E /* AppDelegate.swift */,
 				79F599C1242AE6CD002DD44E /* ViewController.swift */,
 				79F599C3242AE6CD002DD44E /* Main.storyboard */,
@@ -64,6 +117,111 @@
 			path = weibo;
 			sourceTree = "<group>";
 		};
+		79F599D1242AF1D3002DD44E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				79F599D2242AF1D3002DD44E /* Model */,
+				79F599D3242AF1D3002DD44E /* Tools */,
+				79F599D4242AF1D3002DD44E /* View */,
+				79F599DA242AF1D3002DD44E /* Viewmodel */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		79F599D2242AF1D3002DD44E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		79F599D3242AF1D3002DD44E /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				79F599E9243DAEBA002DD44E /* Extension */,
+				790D7265248A32E100A5BF0B /* NetworkTools.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		79F599D4242AF1D3002DD44E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				790D7267248A36F500A5BF0B /* OAuth */,
+				79F599D5242AF1D3002DD44E /* Discover */,
+				79F599D6242AF1D3002DD44E /* Home */,
+				79F599D7242AF1D3002DD44E /* Main */,
+				79F599D8242AF1D3002DD44E /* Message */,
+				79F599D9242AF1D3002DD44E /* Profile */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		79F599D5242AF1D3002DD44E /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				79F599DF242AF3F4002DD44E /* DiscoverTableViewController.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		79F599D6242AF1D3002DD44E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				79F599E1242AF431002DD44E /* HomeTableViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		79F599D7242AF1D3002DD44E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				79F599EC243DB650002DD44E /* Visitor */,
+				79F599E7242AF693002DD44E /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		79F599D8242AF1D3002DD44E /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				79F599E3242AF447002DD44E /* MessageTableViewController.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		79F599D9242AF1D3002DD44E /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				79F599E5242AF482002DD44E /* ProfileTableViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		79F599DA242AF1D3002DD44E /* Viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Viewmodel;
+			sourceTree = "<group>";
+		};
+		79F599E9243DAEBA002DD44E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				79F599EA243DAF36002DD44E /* UIBut+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		79F599EC243DB650002DD44E /* Visitor */ = {
+			isa = PBXGroup;
+			children = (
+				79F599ED243DB69E002DD44E /* VistorTableViewController.swift */,
+				79F599EF243DB801002DD44E /* VistorView.swift */,
+			);
+			path = Visitor;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +229,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79F599CE242AE6EC002DD44E /* Build configuration list for PBXNativeTarget "weibo" */;
 			buildPhases = (
+				511C59E235BF493B219862AE /* [CP] Check Pods Manifest.lock */,
 				79F599B8242AE6CD002DD44E /* Sources */,
 				79F599B9242AE6CD002DD44E /* Frameworks */,
 				79F599BA242AE6CD002DD44E /* Resources */,
+				AA48323D4B67C396C6C64FFF /* [CP] Embed Pods Frameworks */,
+				5443C6B6CB9807B95BE0CAD9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,13 +291,89 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		511C59E235BF493B219862AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-weibo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5443C6B6CB9807B95BE0CAD9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-weibo/Pods-weibo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA48323D4B67C396C6C64FFF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-weibo/Pods-weibo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-weibo/Pods-weibo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		79F599B8242AE6CD002DD44E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79F599E8242AF693002DD44E /* MainViewController.swift in Sources */,
+				790D7266248A32E100A5BF0B /* NetworkTools.swift in Sources */,
+				79F599EB243DAF36002DD44E /* UIBut+Extension.swift in Sources */,
+				79F599EE243DB69E002DD44E /* VistorTableViewController.swift in Sources */,
+				790D7269248A373600A5BF0B /* OAuthViewController.swift in Sources */,
+				79F599E6242AF482002DD44E /* ProfileTableViewController.swift in Sources */,
 				79F599C2242AE6CD002DD44E /* ViewController.swift in Sources */,
 				79F599C0242AE6CD002DD44E /* AppDelegate.swift in Sources */,
+				79F599E0242AF3F4002DD44E /* DiscoverTableViewController.swift in Sources */,
+				79F599F0243DB801002DD44E /* VistorView.swift in Sources */,
+				79F599E4242AF447002DD44E /* MessageTableViewController.swift in Sources */,
+				79F599E2242AF431002DD44E /* HomeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,10 +517,13 @@
 		};
 		79F599CF242AE6EC002DD44E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB4D25F2D270692B9DA7A756 /* Pods-weibo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = weibo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -291,16 +531,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.chen.weibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		79F599D0242AE6EC002DD44E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83726EA9411C029CE6B7D9C4 /* Pods-weibo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = weibo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +551,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.chen.weibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
