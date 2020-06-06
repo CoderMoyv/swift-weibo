@@ -15,8 +15,8 @@ class MainViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         addChidViewControllers()
-    NetworkTools.sharedTools.request(method: .GET, URLString: "http://httpbin.org/get", parameters: ["name":"zhangsan" as AnyObject,"age":18 as AnyObject], finish: {(result,error)->() in print(error)})
-        NetworkTools.sharedTools.request(method: .POST, URLString: "http://httpbin.org/post", parameters: ["name":"zhangsan" as AnyObject,"age":18 as AnyObject], finish: {(result,error)->() in print(error)})
+        NetworkTools.sharedTools.request(method: .GET, URLString: "http://httpbin.org/get", parameters: ["name":"zhangsan" as AnyObject,"age":18 as AnyObject], finished: {(result,error)->() in print(error)})
+        NetworkTools.sharedTools.request(method: .POST, URLString: "http://httpbin.org/post", parameters: ["name":"zhangsan" as AnyObject,"age":18 as AnyObject], finished: {(result,error)->() in print(error)})
     }
     
 

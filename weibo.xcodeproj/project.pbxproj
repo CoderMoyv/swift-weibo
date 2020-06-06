@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		790D7266248A32E100A5BF0B /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790D7265248A32E100A5BF0B /* NetworkTools.swift */; };
 		790D7269248A373600A5BF0B /* OAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790D7268248A373600A5BF0B /* OAuthViewController.swift */; };
+		790D726B248B6CBE00A5BF0B /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790D726A248B6CBE00A5BF0B /* UserAccount.swift */; };
 		79F599C0242AE6CD002DD44E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F599BF242AE6CD002DD44E /* AppDelegate.swift */; };
 		79F599C2242AE6CD002DD44E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F599C1242AE6CD002DD44E /* ViewController.swift */; };
 		79F599C5242AE6CD002DD44E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79F599C3242AE6CD002DD44E /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 /* Begin PBXFileReference section */
 		790D7265248A32E100A5BF0B /* NetworkTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
 		790D7268248A373600A5BF0B /* OAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthViewController.swift; sourceTree = "<group>"; };
+		790D726A248B6CBE00A5BF0B /* UserAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
 		79F599BC242AE6CD002DD44E /* weibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79F599BF242AE6CD002DD44E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79F599C1242AE6CD002DD44E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 		79F599D2242AF1D3002DD44E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				790D726A248B6CBE00A5BF0B /* UserAccount.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 				79F599EB243DAF36002DD44E /* UIBut+Extension.swift in Sources */,
 				79F599EE243DB69E002DD44E /* VistorTableViewController.swift in Sources */,
 				790D7269248A373600A5BF0B /* OAuthViewController.swift in Sources */,
+				790D726B248B6CBE00A5BF0B /* UserAccount.swift in Sources */,
 				79F599E6242AF482002DD44E /* ProfileTableViewController.swift in Sources */,
 				79F599C2242AE6CD002DD44E /* ViewController.swift in Sources */,
 				79F599C0242AE6CD002DD44E /* AppDelegate.swift in Sources */,
