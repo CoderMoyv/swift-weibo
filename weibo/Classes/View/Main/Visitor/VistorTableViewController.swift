@@ -9,6 +9,7 @@
 import UIKit
 
 class VistorTableViewController: UITableViewController {
+    //    public var userLogin = UserAccountViewModel.shareUserAccount.userLogin
     public var userLogin = false
     public var visitorView:VistorView?
     override func loadView() {

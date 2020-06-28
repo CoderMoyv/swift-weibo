@@ -54,17 +54,27 @@ extension OAuthViewController:UIWebViewDelegate{
         }
         let code = query.substring(from: "code=".endIndex)
         print(code)
-        NetworkTools.sharedTools.loadAccessToken(code: code ){
-            (result,error)->() in
-            if error != nil{
-                print("出错了")
-                return
+//        NetworkTools.sharedTools.loadAccessToken(code: code ){
+//            (result,error)->() in
+//            if error != nil{
+//                print("出错了")
+//                return
+//            }
+//            print(result)
+//
+//            let account = UserAccount(dict:result as! [String:AnyObject])
+//            print(account)
+//            self.loadUserInfo(account: account)
+//        }
+        UserAccountViewModel.shareUserAccount.loadAccessToken(code: code){
+            (isSuccessed)->() in
+            if isSuccessed == true
+            {
+                print("ok")
+                print(UserAccountViewModel.shareUserAccount.account as Any)
+            }else{
+                print("失败")
             }
-            print(result)
-
-            let account = UserAccount(dict:result as! [String:AnyObject])
-            print(account)
-            self.loadUserInfo(account: account)
         }
         return false
     }
@@ -76,24 +86,24 @@ extension OAuthViewController:UIWebViewDelegate{
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "关闭", style: .plain, target: self, action: #selector(OAuthViewController.close))
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "自动填充", style: .plain, target: self, action: #selector(OAuthViewController.autoFill))
     }
-    func loadUserInfo(account:UserAccount){
-        NetworkTools.sharedTools.loadUserInfo(uid: account.uid!, accessToken: account.access_token!){
-            (result,error)->Void in
-            if error != nil{
-                print("加载用户出错")
-                return
-            }
-            guard let dict = result as? [String:AnyObject] else{
-                print("格式错误")
-                return
-            }
-            print(dict["screen_name"])
-            print(dict["avatar_large"])
-            
-            account.screen_name = dict["screen_name"] as! String?
-            account.avatar_large = dict["avatar_large"] as! String?
-            
-            print(account)
-        }
-    }
+//    func loadUserInfo(account:UserAccount){
+//        NetworkTools.sharedTools.loadUserInfo(uid: account.uid!, accessToken: account.access_token!){
+//            (result,error)->Void in
+//            if error != nil{
+//                print("加载用户出错")
+//                return
+//            }
+//            guard let dict = result as? [String:AnyObject] else{
+//                print("格式错误")
+//                return
+//            }
+//            print(dict["screen_name"])
+//            print(dict["avatar_large"])
+//            
+//            account.screen_name = dict["screen_name"] as! String?
+//            account.avatar_large = dict["avatar_large"] as! String?
+//            
+//            print(account)
+//        }
+//    }
 }

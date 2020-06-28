@@ -16,6 +16,14 @@ class NetworkTools: AFHTTPSessionManager {
     
      typealias HMRequsetCallBack = (AnyObject?, Error?) -> ()
     
+    public var tokenDict:[String:AnyObject]?{
+        if let token = UserAccountViewModel.shareUserAccount.account?.access_token
+        {
+            return ["access_token":token as AnyObject]
+        }
+        return nil
+    }
+    
     var OAuthURL:NSURL {
         let urlString = "https://api.weibo.com/oauth2/authorize?client_id=\(appKey)&redirect_uri=\(redirectUrl)&response_type=code"
         return NSURL(string: urlString)!
@@ -55,10 +63,23 @@ extension NetworkTools{
         let params = ["client_id" : appKey , "client_secret" : appSecret , "client_secret" : "authorization_code" , "code" : code , "redirect_uri" : redirectUrl]
         request(method: .POST, URLString: urlString, parameters: params as [String : AnyObject]?, finished: finished)
     }
-    func loadUserInfo(uid:String,accessToken:String,finished:@escaping HMRequsetCallBack){
+//    func loadUserInfo(uid:String,accessToken:String,finished:@escaping HMRequsetCallBack){
+//        let urlString = "https://api.weibo.com/2/users/show.json"
+//        let params = ["uid":uid,"access_token":accessToken]
+//        request(method: .GET, URLString: urlString, parameters: params as [String : AnyObject]?, finished: finished)
+//    }
+    
+    func loadUserInfo(uid:String,finished:@escaping HMRequsetCallBack)
+    {
+        guard var params = tokenDict else {
+            finished(nil,NSError(domain:"cn.itcast.error",code:-1001,userInfo:["message":"token为空"]))
+            return
+        }
+        
         let urlString = "https://api.weibo.com/2/users/show.json"
-        let params = ["uid":uid,"access_token":accessToken]
-        request(method: .GET, URLString: urlString, parameters: params as [String : AnyObject]?, finished: finished)
+        params["uid"] = uid as AnyObject?
+        request(method: .GET, URLString: urlString, parameters: params as [String : AnyObject], finished: finished)
+        
     }
     
 }
